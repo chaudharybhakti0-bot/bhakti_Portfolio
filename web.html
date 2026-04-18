@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Bhakti — Software Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&family=Syne:wght@300;400;600&display=swap" rel="stylesheet"/>
+<link rel="Stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">bhakti<span>.dev</span></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" onclick="closeMenu()">about</a></li>
+    <li><a href="#projects" onclick="closeMenu()">projects</a></li>
+    <li><a href="#skills" onclick="closeMenu()">skills</a></li>
+    <li><a href="#contact" onclick="closeMenu()">contact</a></li>
+  </ul>
+  <div class="nav-status">
+    <div class="status-dot"></div>
+    open to work
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Software Engineer</div>
+    <h1 class="hero-name">
+      Hi, I'm<br><span class="highlight">Bhakti</span>
+    </h1>
+    <div class="hero-role">
+      I build <span id="typed"></span><span class="cursor"></span>
+    </div>
+    <p class="hero-desc">A software engineer passionate about building scalable systems, clean APIs, and products that solve real problems. I love writing code that is simple, fast, and maintainable.</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn-accent">View projects →</a>
+      <a href="#contact" class="btn-outline">Get in touch</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">Intern</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">5+</div>
+        <div class="hero-stat-label">projects_built</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">5+</div>
+        <div class="hero-stat-label">tech_stack</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="fade-in">
+      <p class="section-label">about me</p>
+      <h2 class="section-title">Engineer. Builder.<br>Problem solver.</h2>
+      <p class="about-body">I'm Bhakti, a software engineer with a passion for building robust, scalable applications. I enjoy working across the full stack — from designing clean APIs to crafting smooth user interfaces.</p>
+      <p class="about-body">I thrive in fast-paced environments, love open-source, and am always exploring new technologies to stay sharp. My goal is to write code that lasts and systems that scale.</p>
+      <div class="about-code">
+        <span class="code-line"><span class="code-key">const</span> bhakti = {</span>
+        <span class="code-line">  <span class="code-key">role</span>: <span class="code-str">"Software Engineer"</span>,</span>
+        <span class="code-line">  <span class="code-key">location</span>: <span class="code-str">"India"</span>,</span>
+        <span class="code-line">  <span class="code-key">experience</span>: <span class="code-num">Intern</span>,</span>
+        <span class="code-line">  <span class="code-key">focus</span>: [<span class="code-str">"backend"</span>, <span class="code-str">"UI/UX"</span>, <span class="code-str">"database"</span>],</span>
+        <span class="code-line">  <span class="code-key">available</span>: <span class="code-val">true</span></span>
+        <span class="code-line">};</span>
+      </div>
+    </div>
+
+    <div class="fade-in about-right">
+
+      <!-- EDUCATION -->
+      <p class="section-label" style="margin-bottom:1.5rem">Education</p>
+      <div class="exp-item">
+        <div class="exp-date">2023 — Present</div>
+        <div class="exp-company">IMSEC</div>
+        <div class="exp-role">Btech in Computer Science</div>
+        <div class="exp-desc">Major in Cyber Security.</div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-date">2022 — 2023</div>
+        <div class="exp-company">Silver Line Prestige School</div>
+        <div class="exp-role">12th Grade</div>
+        <div class="exp-desc">Focused on Computer Science and Mathematics. Developed a strong foundation in programming and problem-solving.</div>
+      </div>
+
+      <!-- DIVIDER -->
+      <hr class="timeline-divider" />
+
+      <!-- EXPERIENCE -->
+      <p class="section-label" style="margin-bottom:1.5rem">Experience</p>
+      <div class="exp-item">
+        <div class="exp-date">2025</div>
+        <div class="exp-company">CODSOFT</div>
+        <div class="exp-role">Intern</div>
+        <div class="exp-desc">Strengthened my fundamentals by working on real tasks</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label fade-in">projects</p>
+  <h2 class="section-title fade-in">Things I've built</h2>
+  <div class="projects-grid">
+
+    
+
+    <div class="project-card fade-in">
+      <div class="project-header">
+        <div class="project-icon">
+          <svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#4AFFA3" stroke-width="1.2"/><path d="M6 9l2 2 4-4" stroke="#4AFFA3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="project-links">
+          <a href="#">GitHub ↗</a>
+          <a href="#">Live ↗</a>
+        </div>
+      </div>
+      <div class="project-name">Zivara - A mental wellness app (ongoing)</div>
+      <p class="project-desc">A web-based application designed to support mental wellness through guided exercises, mood tracking, and relaxing games.</p>
+      <div class="tech-stack">
+        <span class="tech-tag">Flutter</span>
+        <span class="tech-tag">Figma</span>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-header">
+        <div class="project-icon">
+          <svg viewBox="0 0 18 18" fill="none"><path d="M3 4h12v10H3z" stroke="#4AFFA3" stroke-width="1.2" rx="1"/><path d="M6 8h6M6 11h4" stroke="#4AFFA3" stroke-width="1" stroke-linecap="round"/></svg>
+        </div>
+        <div class="project-links">
+          <a href="#">GitHub ↗</a>
+          <a href="#">Link ↗</a>
+        </div>
+      </div>
+      <div class="project-name">Password Generator</div>
+      <p class="project-desc">A command-line tool to generate secure passwords with customizable options and clipboard integration.</p>
+      <div class="tech-stack">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-header">
+        <div class="project-icon">
+          <svg viewBox="0 0 18 18" fill="none"><polygon points="9,2 16,6 16,12 9,16 2,12 2,6" stroke="#4AFFA3" stroke-width="1.2" fill="none"/><circle cx="9" cy="9" r="2.5" stroke="#4AFFA3" stroke-width="1"/></svg>
+        </div>
+        <div class="project-links">
+          <a href="#">GitHub ↗</a>
+          <a href="#">Live ↗</a>
+        </div>
+      </div>
+      <div class="project-name">Honeypot</div>
+      <p class="project-desc">A deception system designed to detect and analyze cyber threats by mimicking real systems and services.</p>
+      <div class="tech-stack">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Flask</span>
+        <span class="tech-tag">Scapy</span>
+        <span class="tech-tag">SQL</span>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-header">
+        <div class="project-icon">
+          <svg viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="6" height="6" rx="1" stroke="#4AFFA3" stroke-width="1.2"/><rect x="10" y="2" width="6" height="6" rx="1" stroke="#4AFFA3" stroke-width="1.2"/><rect x="2" y="10" width="6" height="6" rx="1" stroke="#4AFFA3" stroke-width="1.2"/><rect x="10" y="10" width="6" height="6" rx="1" stroke="#4AFFA3" stroke-width="1.2"/></svg>
+        </div>
+        <div class="project-links">
+          <a href="#">GitHub ↗</a>
+          <a href="#">Live ↗</a>
+        </div>
+      </div>
+      <div class="project-name">Interactive Website</div>
+      <p class="project-desc">A responsive website with interactive elements, built with modern web technologies.</p>
+      <div class="tech-stack">
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">React</span>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-header">
+        <div class="project-icon">
+          <svg viewBox="0 0 18 18" fill="none"><path d="M9 2v14M2 9h14" stroke="#4AFFA3" stroke-width="1.2" stroke-linecap="round"/><circle cx="9" cy="9" r="3" stroke="#4AFFA3" stroke-width="1"/></svg>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/chaudharybhakti0-bot/text-generator/blob/main/README.md">GitHub ↗</a>
+          <a href="https://chaudharybhakti0-bot.github.io/text-generator/">Live ↗</a>
+        </div>
+      </div>
+      <div class="project-name">Text Generator</div>
+      <p class="project-desc">A tool that generates and manipulates text using string processing techniques, built with a clean web interface.</p>
+      <div class="tech-stack">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Flask</span>
+        <span class="tech-tag">String Manipulation</span>
+        <span class="tech-tag">React</span>
+      </div>
+    </div>
+    <div class="project-card fade-in">
+      <div class="project-header">
+        <div class="project-icon">
+          <svg viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="2" stroke="#4AFFA3" stroke-width="1.2"/><path d="M5 9h8M5 6h5M5 12h6" stroke="#4AFFA3" stroke-width="1" stroke-linecap="round"/></svg>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/chaudharybhakti0-bot/Expense-Ledger/blob/main/README.md">GitHub ↗</a>
+          <a href="https://chaudharybhakti0-bot.github.io/Expense-Ledger/" >Live ↗</a>
+        </div>
+      </div>
+      <div class="project-name">Expense Ledger </div>
+      <p class="project-desc">Tracks income and expenses with real-time balance, category insights, and local storage support.
+</p>
+      <div class="tech-stack">
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+      </div>
+    </div>
+    <div class="project-card fade-in">
+      <div class="project-header">
+        <div class="project-icon">
+          <svg viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="2" stroke="#4AFFA3" stroke-width="1.2"/><path d="M5 9h8M5 6h5M5 12h6" stroke="#4AFFA3" stroke-width="1" stroke-linecap="round"/></svg>
+        </div>
+        <div class="project-links">
+          <a href="#">GitHub ↗</a>
+          <a href="#">Live ↗</a>
+        </div>
+      </div>
+      <div class="project-name">TO DO List</div>
+      <p class="project-desc">A simple To-Do List web app that allows users to add and manage tasks with deadlines. It uses localStorage to save data, ensuring tasks persist even after refreshing the page.
+</p>
+      <div class="tech-stack">
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">Java Script</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <p class="section-label fade-in">skills</p>
+  <h2 class="section-title fade-in">Tech stack</h2>
+  <div class="skills-grid">
+    <div class="skill-category fade-in">
+      <div class="skill-cat-title">Languages</div>
+      <div class="skill-pills">
+        <span class="skill-pill">Java</span>
+        <span class="skill-pill">Python</span>
+      </div>
+    </div>
+    <div class="skill-category fade-in">
+      <div class="skill-cat-title">Frontend</div>
+      <div class="skill-pills">
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">HTML</span>
+        <span class="skill-pill">CSS</span>
+      </div>
+    </div>
+    <div class="skill-category fade-in">
+      <div class="skill-cat-title">Databases</div>
+      <div class="skill-pills">
+        <span class="skill-pill">MySQL</span>
+      </div>
+    </div>
+    <div class="skill-category fade-in">
+      <div class="skill-cat-title">Tools</div>
+      <div class="skill-pills">
+        <span class="skill-pill">Git</span>
+        <span class="skill-pill">VS Code</span>
+        <span class="skill-pill">Figma</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-layout">
+    <div class="fade-in">
+      <p class="section-label">contact</p>
+      <h2 class="section-title">Let's build<br>something together</h2>
+      <p class="contact-body">Have an interesting project, a job opportunity, or just want to talk tech? My inbox is always open — I try to respond within 24 hours.</p>
+      <a href="mailto:chaudharybhakti0@gmail.com" class="contact-email-link">hello@bhakti.mail</a>
+      <div class="social-row">
+        <a href="https://github.com/chaudharybhakti0-bot">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/bhakti-chaudhary-361678294/">LinkedIn ↗</a>
+        <a href="https://leetcode.com/u/fA9lhBSCs5/">Leetcode ↗</a>
+        <a href="https://www.canva.com/design/DAHD87jPV5U/XXqPPgFeUdNG_igttcx51A/edit?utm_content=DAHD87jPV5U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Resume ↗</a>
+      </div>
+    </div>
+    <div class="fade-in">
+      <div class="contact-form">
+        <div class="form-group">
+          <label for="name">name</label>
+          <input type="text" id="name" placeholder="Your name" />
+        </div>
+        <div class="form-group">
+          <label for="email">email</label>
+          <input type="email" id="email" placeholder="your@email.com" />
+        </div>
+        <div class="form-group">
+          <label for="subject">subject</label>
+          <input type="text" id="subject" placeholder="What's this about?" />
+        </div>
+        <div class="form-group">
+          <label for="message">message</label>
+          <textarea id="message" placeholder="Tell me more..."></textarea>
+        </div>
+        <button class="submit-btn" onclick="handleSubmit()">send_message() →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">bhakti.dev</div>
+  <div class="footer-copy">© 2026 Bhakti</div>
+</footer>
+<script>
+  const phrases = ["scalable backends.", "clean APIs.", "fast web apps.", "things that matter."];
+  let pIdx = 0, cIdx = 0, deleting = false;
+  const el = document.getElementById('typed');
+  function type() {
+    const phrase = phrases[pIdx];
+    if (!deleting) {
+      el.textContent = phrase.slice(0, ++cIdx);
+      if (cIdx === phrase.length) { deleting = true; setTimeout(type, 1800); return; }
+    } else {
+      el.textContent = phrase.slice(0, --cIdx);
+      if (cIdx === 0) { deleting = false; pIdx = (pIdx + 1) % phrases.length; }
+    }
+    setTimeout(type, deleting ? 50 : 80);
+  }
+  type();
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 80);
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+  function closeMenu() { document.getElementById('navLinks').classList.remove('open'); }
+
+  function handleSubmit() {
+    const name = document.getElementById('name').value;
+    if (!name.trim()) { alert('Please enter your name.'); return; }
+    alert('Message sent! I\'ll get back to you soon, ' + name + '.');
+  }
+</script>
+</body>
+</html>
