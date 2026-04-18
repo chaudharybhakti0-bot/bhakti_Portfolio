@@ -2,7 +2,7 @@
 
 > Personal portfolio website of Bhakti Chaudhary, CS Undergrad & Software Engineer.
 
-🔗 **Live:** [bhakti.dev](https://chaudharybhakti0-bot.github.io)
+
 
 ---
 
